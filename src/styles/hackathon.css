@@ -1,0 +1,67 @@
+.hackathon-navbar { display: flex; justify-content: space-between; }
+.hackathon-usuario { display: flex;}
+.hackathon-usuario p { margin-right: 15px;}
+
+.hackathon-convidar{
+	align-items: center;
+	display: flex;
+	grid-area: convites;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px; 
+}
+
+.hackathon-convidar .nome_usuario { margin-top: 15px;}
+.hackathon-convidar button {margin-top: 10px;}
+.hackathon-confirmado { background-color: #00D248; }
+.hackathon-informacao { align-items: center; display: flex; grid-area: info; justify-content: center; flex-direction: column; margin-top: -20px; }
+.hackathon-informacao p {margin-top: -20px;}
+
+.hackathon-embrulho {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+}
+
+.hackathon-embrulho p { margin-bottom: 20px; margin-top: -30px; text-align: left; }
+
+
+.hackathon-imagem { background-image: url(../images/fundo.jpg); background-size: cover; height: 45vh;}
+.hackathon-usuario { display: flex; flex-direction: row; justify-content: flex-end; }
+
+.hackathon-pacote{ display: flex; flex-direction: row; }
+
+.hackathon-perfis { display: flex; flex-direction: row; justify-content: space-around; width: 70%;}
+
+
+
+.hackathon-titulo { font-size: 35px; font-weight: bold; margin: 10px; }
+
+@media only screen and (max-width: 960px) {
+
+	.hackathon-container {
+        grid-template-rows: 15vh 40vh ;
+        grid-template-areas: "titulo usuario" "imagem imagem" "publicidade publicidade" "info info" "botao botao" "convites convites";
+	}
+
+}
+
+@media screen and (max-device-width: 640px){
+	.hackathon-container {
+		grid-template-rows: 10vh 30vh ;
+        grid-template-areas: "titulo usuario" "imagem imagem" "publicidade publicidade" "info info" "botao botao" "convites convites";
+	}
+	
+	.hackathon-perfil { display: none; }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	
+	.hackathon-container {
+		grid-template-rows: 7.5vh 30vh ;
+        grid-template-areas: "titulo usuario" "imagem imagem" "publicidade publicidade" "info info" "botao botao" "convites convites";
+	}
+	.hackathon-perfil { display: none; }
+}

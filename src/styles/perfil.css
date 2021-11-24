@@ -1,0 +1,56 @@
+.perfil-confirmacao{ display: flex; flex-direction: row; margin: 5px 7.5px; }
+.perfil-confirmar{ margin-right: 5px; background-color: #32a852; }
+.perfil-convites{ align-items: center; display: flex; flex-direction: column; }
+.perfil-data { font-size: 25px; margin-left: 20px; }
+.perfil-email { font-size: 30px; margin-left: 20px;}
+.perfil-titulo { text-align: center; font-size: 45px;}
+.perfil-usuario { 
+    align-items: center; 
+    display: flex;  
+    flex-direction: column; 
+    margin-top: 40px; 
+    width: 32.5vw;
+}
+.perfil-item { border: 2px solid #eeeeee; border-radius: 10px; margin: 5px; width: 340px; }
+.perfil-container { display: flex; flex-direction: row; justify-content: space-between; }
+
+
+.perfil-logo {
+    background-color: #FF145B;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.perfil-pacote {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.participando {  align-items: center; display: flex; flex-direction: column; }
+.rejeitar { background-color: #fa2542 ; margin-left: 5px; }
+.perfil-subtitulo { font-size: 25px; margin:15px; font-weight: bolder; }
+
+
+
+@media only screen and (max-width: 960px) {
+    .perfil-container{ flex-direction: column; }
+    .perfil-item{ width: 95%; }
+    .perfil-conteudo{ width: 100%; }
+    .perfil-usuario{align-items: center; display: flex; justify-content: center; width: 90vw;}
+}
+
+@media screen and (max-device-width: 640px){
+    .perfil-container{ flex-direction: column; }
+    .perfil-item{ width: 95%; }
+    .perfil-conteudo{ width: 100%; }
+    .perfil-usuario{align-items: center; display: flex; justify-content: center;width: 90vw;}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}

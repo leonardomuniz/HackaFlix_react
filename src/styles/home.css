@@ -1,0 +1,71 @@
+.home-navbar { display: flex; justify-content: space-between;}
+.home-usuario { display: flex;}
+.home-usuario p { margin-right: 15px;}
+
+.home-embrulho {
+	background-image: url(../images/fundo.jpg);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.home-conteudo{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+}
+
+.home-conteudo p { text-align: left;}
+.home-pesquisar input { margin: 3.5vh; width: 100%;}
+
+.home-container {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 20px;
+}
+
+.home-pesquisar {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.home-teste {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.home-art-hacka {
+	border: 2px solid #eeeeee;
+	border-radius: 10px;
+	height: 192px;
+	margin: 5px;
+	width: 24%;
+}
+
+.home-art-hacka:hover{
+	background-color: #ff3b76;
+}
+
+@media only screen and (max-width: 960px) {
+	.home-container { flex-direction: column; margin: 0; }
+	.home-art-hacka { margin: 10px 0; width: 90%; }
+}
+
+@media screen and (max-device-width: 640px){
+	.home-container { flex-direction: column; margin: 0; }
+	.home-art-hacka { margin: 10px 0; width: 90%; }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
